@@ -1,0 +1,5 @@
+<label> Search: <input ng-model="searchText.title" /> </label>
+<div ng-repeat="m in movies | filter:searchText | orderBy:propertyName:reverse">
+  {{ m.title }}
+  <a href="#/details/{{m.rank}}"><img class="poster" ng-src="../data/images/{{m.imdbID}}.jpg"></img></a>
+</div>
