@@ -26,7 +26,7 @@
   {{ m.title }}
 </div>-->
 <div class ="thumb columns small-12 medium-6 large-3 text-center" ng-repeat="m in movies | filter:searchText | filter:genre | orderBy:propertyName:reverse">
-  <a href="#/details/{{m.rank}}"><img class="poster" ng-src="../data/images/{{m.imdbID}}.jpg"></img></a>
+  <a href="#/details/{{m.rank}}"><img class="poster" ng-src="data/images/{{m.imdbID}}.jpg"></img></a>
   <div class="title">{{ m.title }}</div>
 </div>
 </body>

@@ -1,6 +1,6 @@
 app.controller('ListController', ['$scope', '$http', function($scope, $http) {
 
-  $http.get('../data/imdb250.json')
+  $http.get('data/imdb250.json')
       .success(function(response){
         $scope.movies = response;
       })
@@ -20,7 +20,7 @@ app.controller('ListController', ['$scope', '$http', function($scope, $http) {
 app.controller('GalleryController', ['$scope', '$http', function($scope, $http) {
 
   $scope.filter = function(genre){$scope.filterVariable = genre;}
-  $http.get('../data/imdb250.json')
+  $http.get('data/imdb250.json')
       .success(function(response){
         $scope.movies = response;
       })
@@ -32,7 +32,7 @@ app.controller('GalleryController', ['$scope', '$http', function($scope, $http) 
 
 app.controller('DetailsController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
 
-  $http.get('../data/imdb250.json')
+  $http.get('data/imdb250.json')
       .success(function(response){
         $scope.movie = response[$routeParams.rank - 1]
       })
