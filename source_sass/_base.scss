@@ -1,3 +1,118 @@
+
 .poster{
   border-radius: 5px;
+  height: 340px;
+  width: 240px;
+}
+
+.buttons {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.buttons button {
+  /*border-radius: 3px;*/
+  background-color: #606060;
+  color: #bcbcbc;
+  /*width: 60px;*/
+  font-size: .5rem;
+}
+
+.buttons button:hover {
+  background-color: #434444;
+}
+
+body {
+  background-color: #303030;
+}
+
+label {
+  color: #bcbcbc;
+  margin: 30px;
+  font-size: 1.3rem;
+}
+
+input {
+  height: 30px;
+  width: 600px;
+}
+
+h1 {
+  color: #bcbcbc;
+  font-size: 2rem;
+}
+
+h4 {
+  color: #bcbcbc;
+  font-size: 1rem;
+}
+
+.detailpic {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.text {
+  background-color: #3a3a3a;
+  padding: 30px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+.previous {
+  text-decoration: none;
+  color: #bcbcbc;
+  padding-top: 15px;
+}
+
+.next {
+  text-decoration: none;
+  color: #bcbcbc;
+  padding-top: 15px;
+}
+
+.title {
+  color: #bcbcbc;
+  padding: 15px;
+}
+
+.homebutton {
+  margin: auto;
+  background-color: #3a3a3a;
+  padding: 15px;
+}
+
+.listbutton {
+  padding: 50px;
+  margin: auto;
+}
+
+.listtext {
+  color: #bcbcbc;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.rank {
+  color: #bcbcbc;
+  padding: 10px;
+  margin-left: 20px;
+  border-style: solid;
+  border-color: #bcbcbc;
+  border-width: 2px;
+}
+
+.genre {
+  color: #bcbcbc;
+  padding: 10px;
+  margin-left: 20px;
+  border-style: solid;
+  border-color: #bcbcbc;
+  border-width: 2px;
+}
+
+.rank:hover {
+  background-color: #bcbcbc;
+  color: #303030;
 }

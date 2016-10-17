@@ -1,7 +1,8 @@
 <label> Search: <input ng-model="searchText.title" /> </label>
-<button ng-click="sortBy('rank')">rank</button>
-<button ng-click="sortBy('title')">title</button>
-<div ng-repeat="m in movies | filter:searchText | orderBy:propertyName:reverse">
+<a class="listbutton" href="#/gallery"><button>Gallery View</button></a><br>
+<button class="rank" ng-click="sortBy('rank')">Rank</button>
+<button class="genre" ng-click="sortBy('genre')">Genre</button>
+<div class="listtext" ng-repeat="m in movies | filter:searchText | orderBy:propertyName:reverse">
   {{ m.title }}
   <!-- <img ng-src="../data/images/{{m.imdbID}}.jpg"></img> -->
 </div>

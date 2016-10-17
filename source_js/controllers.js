@@ -19,6 +19,7 @@ app.controller('ListController', ['$scope', '$http', function($scope, $http) {
 
 app.controller('GalleryController', ['$scope', '$http', function($scope, $http) {
 
+  $scope.filter = function(genre){$scope.filterVariable = genre;}
   $http.get('../data/imdb250.json')
       .success(function(response){
         $scope.movies = response;
